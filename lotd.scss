@@ -1,16 +1,50 @@
+/* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
+
+// Variable example
+$color: red;
+
+
 
 // Nesting example
 div {
     font-size: 18px;
 
     p {
-        color: blue;
+        color: $color;
     }
 
     ul {
         color: green;
     }
 }
+
+
+// Inheritance example
+
+%message { // This contains 6 CSS properties
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.success {
+    @extend %message;
+    background-color: green;
+}
+
+.warning {
+    @extend %message;
+    background-color: orange;
+}
+
+.error {
+    @extend %message;
+    background-color: red;
+}
+
 
 /* This is a multiline comment and 
 it should be in css file */
