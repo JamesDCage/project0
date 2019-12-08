@@ -1,0 +1,1 @@
+sass lotd.scss lotd.css
