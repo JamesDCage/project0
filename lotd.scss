@@ -1,13 +1,26 @@
 /* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
 
 // Variables
-$poem-h1-font: Ariel;
-$poem-body-font: Times;
-$color: red;
+$poem-h1-font-family: serif;
+$poem-body-font-family: serif;
 
 
-article.poem h1, h2{
-	color: green;
+
+article.poem {
+    margin: 20px;    
+    font-family: $poem-body-font-family;
+    h1, h2{
+	    font-family: $poem-h1-font-family;
+        color: black;
+    }
+	h1 {
+		font-size: 20px;
+	    font-weight: normal;
+		}
+	h2 {
+		font-size: 20px;
+	    font-weight: normal;	
+	}	
 }
 
 // Nesting example
@@ -15,7 +28,7 @@ div {
     font-size: 18px;
 
     p {
-        color: $color;
+        color: blue;
     }
 
     ul {
@@ -27,7 +40,7 @@ div {
 // Inheritance example
 
 %message { 
-    font-family: $poem-h1-font;
+    font-family: $poem-h1-font-family;
     font-size: 18px;
     margin: 20px;
 }
