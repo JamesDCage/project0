@@ -1,19 +1,20 @@
 /* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
+article.poem h2, article.poem h1 {
+  font-family: serif;
+  color: black;
+}
+
 article.poem {
   margin: 20px;
   font-family: serif;
 }
-article.poem h1, article.poem h2 {
-  font-family: serif;
-  color: black;
-}
 article.poem h1 {
   font-size: 20px;
-  font-weight: normal;
 }
 article.poem h2 {
   font-size: 20px;
   font-weight: normal;
+  font: italic;
 }
 
 div {
