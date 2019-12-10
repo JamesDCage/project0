@@ -12,6 +12,7 @@ article.poem {
 }
 article.poem h1 {
   font-size: 20px;
+  font-weight: bold;
 }
 article.poem h2 {
   font-size: 17px;

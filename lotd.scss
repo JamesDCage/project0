@@ -18,6 +18,7 @@ article.poem { //
 	h1 {
 	    @extend %poem-title; // Inheritance
 		font-size: 20px;
+        font-weight: bold;		
 		}
 	h2 {
 	    @extend %poem-title;
@@ -25,6 +26,6 @@ article.poem { //
 	    font-weight: normal; 
 	}	
 	p.complete_date  {
-	    font-style:italic;
+	    font-style: italic;
 	}
 }
