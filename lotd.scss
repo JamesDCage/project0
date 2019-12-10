@@ -1,66 +1,30 @@
+// The following line will appear in the compiled CSS file:
+/* This CSS file was compiled from a SASS SCSS file. 
+
 /* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
 
 // Variables
 $poem-h1-font-family: serif;
 $poem-body-font-family: serif;
 
-%poem-title { // Inheritance
+%poem-title { // Inheritance Example
 	font-family: $poem-h1-font-family;
     color: black;
 }
 
-article.poem { // Nesting  IS THIS WORKING???
-    margin: 20px;    
+article.poem { // 
+    margin: 30px;    
     font-family: $poem-body-font-family;
 	h1 {
-	    @extend %poem-title;
+	    @extend %poem-title; // Inheritance
 		font-size: 20px;
 		}
 	h2 {
 	    @extend %poem-title;
-		font-size: 20px;
-	    font-weight: normal;
-        font: italic; // THIS DID NOT WORK
+		font-size: 17px;
+	    font-weight: normal; 
 	}	
+	p.complete_date  {
+	    font-style:italic;
+	}
 }
-
-// Nesting example
-div {
-    font-size: 18px;
-
-    p {
-        color: blue;
-    }
-
-    ul {
-        color: green;
-    }
-}
-
-
-// Inheritance example
-
-%message { 
-    font-family: $poem-h1-font-family;
-    font-size: 18px;
-    margin: 20px;
-}
-
-.success {
-    @extend %message;
-    background-color: green;
-}
-
-.warning {
-    @extend %message;
-    background-color: orange;
-}
-
-.error {
-    @extend %message;
-    background-color: red;
-}
-
-
-/* This is a multiline comment and 
-it should be in css file */
