@@ -7,6 +7,14 @@
 $poem-h1-font-family: serif;
 $poem-body-font-family: serif;
 
+h1.logo { //Front page
+    font-family: serif;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 30px;
+}
+
+
 %poem-title { // Inheritance Example
 	font-family: $poem-h1-font-family;
     color: black;
