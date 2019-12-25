@@ -1,26 +1,30 @@
 // The following line will appear in the compiled CSS file:
-/* This CSS file was compiled from a SASS SCSS file. 
+/* This CSS file was compiled from a SASS SCSS file. */
 
-/* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
+// Must use a SCSS variable, SCSS nesting, and SCSS inheritance.
 
 // Variables
 $poem-h1-font-family: serif;
 $poem-body-font-family: serif;
 
-h1.logo { //Front page
-    font-family: serif;
-	font-size: 24px;
-	font-weight: bold;
+div.logo { // Nesting
 	margin: 30px;
+	h1 {
+	    font-family: serif;
+	    font-size: 24px;
+	    font-weight: bold;
+	}
+	p {
+	    font-family: serif;
+	}
 }
 
-
-%poem-title { // Inheritance Example
+%poem-title { // Template Example
 	font-family: $poem-h1-font-family;
     color: black;
 }
 
-article.poem { // 
+article.poem { // Nesting with Inheritance
     margin: 30px;    
     font-family: $poem-body-font-family;
 	h1 {

@@ -1,11 +1,14 @@
-/* This CSS file was compiled from a SASS SCSS file. 
-
-/* Must use a SCSS variable, SCSS nesting, and SCSS inheritance. */
-h1.logo {
+/* This CSS file was compiled from a SASS SCSS file. */
+div.logo {
+  margin: 30px;
+}
+div.logo h1 {
   font-family: serif;
   font-size: 24px;
   font-weight: bold;
-  margin: 30px;
+}
+div.logo p {
+  font-family: serif;
 }
 
 article.poem h2, article.poem h1 {
