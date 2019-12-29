@@ -28,6 +28,13 @@ article.poem h2 {
   font-size: 17px;
   font-weight: normal;
 }
+article.poem p {
+  line-height: 135%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 22px;
+  text-indent: -22px;
+}
 article.poem p.complete_date {
   font-style: italic;
 }

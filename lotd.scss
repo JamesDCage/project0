@@ -24,6 +24,8 @@ div.logo { // Nesting
     color: black;
 }
 
+
+
 article.poem { // Nesting with Inheritance
     margin: 30px;    
     font-family: $poem-body-font-family;
@@ -31,13 +33,20 @@ article.poem { // Nesting with Inheritance
 	    @extend %poem-title; // Inheritance
 		font-size: 20px;
         font-weight: bold;		
-		}
+	}
 	h2 {
 	    @extend %poem-title;
 		font-size: 17px;
 	    font-weight: normal; 
-	}	
-	p.complete_date  {
-	    font-style: italic;
 	}
+    p { //
+        line-height: 135%;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 22px ;
+        text-indent: -22px ;
+    }
+	p.complete_date {
+	    font-style: italic;
+	}	
 }
