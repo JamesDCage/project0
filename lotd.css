@@ -1,7 +1,4 @@
 /* This CSS file was compiled from a SASS SCSS file. */
-div.logo {
-  margin: 30px;
-}
 div.logo h1 {
   font-family: serif;
   font-size: 24px;
@@ -37,6 +34,29 @@ article.poem p {
 }
 article.poem p.complete_date {
   font-style: italic;
+}
+
+@media (min-width: 711px) {
+  div.logo {
+    margin: 30px;
+  }
+}
+@media (max-width: 710px) {
+  div.logo {
+    margin: 10px;
+  }
+}
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio > div {
+  font-family: serif;
+  font-size: normal;
+  margin: 0px;
+  padding-top: 10px;
+  width: 340px;
 }
 
 /*# sourceMappingURL=lotd.css.map */

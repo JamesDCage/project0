@@ -8,7 +8,7 @@ $poem-h1-font-family: serif;
 $poem-body-font-family: serif;
 
 div.logo { // Nesting
-	margin: 30px;
+	// margin: 30px;
 	h1 {
 	    font-family: serif;
 	    font-size: 24px;
@@ -49,4 +49,34 @@ article.poem { // Nesting with Inheritance
 	p.complete_date {
 	    font-style: italic;
 	}	
+}
+
+
+
+
+@media (min-width: 711px) {
+	div.logo {
+		margin: 30px;
+	}
+}
+
+@media (max-width: 710px) {
+	div.logo {
+		margin: 10px;
+	}
+}
+
+
+.bio {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bio > div {
+	font-family: serif;
+	//background-color: springgreen;
+	font-size: normal;
+	margin: 0px;
+	padding-top: 10px;
+	width: 340px;
 }
