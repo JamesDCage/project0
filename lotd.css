@@ -8,6 +8,10 @@ div.logo p {
   font-family: serif;
 }
 
+div.row-header {
+  font-weight: bold;
+}
+
 article.poem h2, article.poem h1 {
   font-family: serif;
   color: black;

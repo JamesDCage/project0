@@ -4,6 +4,7 @@
 // Must use a SCSS variable, SCSS nesting, and SCSS inheritance.
 
 // Variables
+
 $poem-h1-font-family: serif;
 $poem-body-font-family: serif;
 
@@ -17,6 +18,10 @@ div.logo { // Nesting
 	p {
 	    font-family: serif;
 	}
+}
+
+div.row-header {// Revision History
+font-weight: bold;
 }
 
 %poem-title { // Template Example
@@ -53,7 +58,7 @@ article.poem { // Nesting with Inheritance
 
 
 
-
+// For biography page. Satisfies @media requiremnt
 @media (min-width: 711px) {
 	div.logo {
 		margin: 30px;
@@ -66,6 +71,7 @@ article.poem { // Nesting with Inheritance
 	}
 }
 
+// Flexbox details for bio page
 
 .bio {
 	display: flex;
