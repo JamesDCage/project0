@@ -1,8 +1,8 @@
-# Project 0
+# CS50W Project 0
 
 Web Programming with Python and JavaScript
 
-All CSS in this project comes from SCSS file compilation. 
+First Project, James Cage JamesDCage@Gmail.com
 
 ## Background
 
@@ -22,6 +22,6 @@ poem.html: "Singing in the Wilderness" by Joanne Ramey Cage. For demonstration p
 
 revision.html: Revision history. Added to allow demonstration of Bootstrap grid and HTML unordered list.
 
-lotd.scss & lotd.css: SASS file, compiled to CSS
+lotd.scss & lotd.css: SASS file, compiled to CSS. 
 
 Various images (.jpg files)
